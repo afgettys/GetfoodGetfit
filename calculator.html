@@ -20,37 +20,57 @@
 
 <body>
   <div>
+      <div class="top-bar" class="fixed"><div class="top-bar-left" id="left" style="color:#005900">
+          <p>Getfood Getfit<a href="index.html"><img src="assets/favicon.png"></a></p>
+          </div>
+          <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          </a>
+          <div class="top-bar-right" id="right" style="color:#005900">
+          <ul>
+          <li><a href="#" style="color:#005900" id="bmi">Check your BMI</a></li>
+          <li><a href="exercise.html" style="color:#005900" id="exer">Exercise</a></li>
+          <li><a href="recipeBuilder.html" style="color:#005900" id="getfood">Recipe Builder</a></li>
+          <li><a href="recipeLocker.html" style="color:#005900" id="getfood">Recipe Locker</a></li>
+          <li><a href="contact.html" style="color:#005900"
+          id="contact">Contact Us </a></li>
+          </ul>
+          </div>
+          </div>
       <div class="translucent-form-overlay">
           <form>
             <h3>Calories Calculator</h3>
             <div class="row columns">
               <label>Weight in Pounds
-                <input type="text" id="weight" onsubmit="calsPerDay()" >
+                <input type="text" id="weight"  >
               </label>
             </div>
             <div class="row columns">
               <label>Gender
                 <select name="status" type="text">
-                  <option value="male" id="male" onsubmit="calsPerDay()">Male</option>
-                  <option value="female" id="female" onsubmit="calsPerDay()">Female</option>
+                  <option value="male" id="male" >Male</option>
+                  <option value="female" id="female" >Female</option>
                 </select>
               </label>
             </div>
             <div class="row columns">
               <label>Age
-                <input type="text" name="age" id="age" onsubmit="calsPerDay()">
+                <input type="text" name="age" id="age" >
               </label>
             </div>
             <div class="row">
               <label class="columns small-12">Height</label>
               <div class="columns small-6">
-                <input type="number" min="0" id="heightFeet" placeholder="Feet" onsubmit="calsPerDay()">
+                <input type="number" min="0" id="heightFeet" placeholder="Feet" >
               </div>
               <div class="columns small-6">
-                <input type="number" min="0" id="heightInches" placeholder="Inches" onsubmit="calsPerDay()">
+                <input type="number" min="0" id="heightInches" placeholder="Inches" >
               </div>
             </div>
-              <input type="submit" value="Submit">
+              <input type="submit" value="Submit" onclick="calsPerDay()" >
          </form>
         </div>
 
