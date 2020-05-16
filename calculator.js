@@ -19,7 +19,7 @@ function calsPerDay(event) {
     var heightInches = find("heightInches").value * 2.54;
     var weight = find("weight").value / 2.2;
     var result = 0;
-    console.log(document.getElementById("test").value);
+    // console.log(document.getElementById("test").value);
     console.log(heightInches, "----------------");
 
     if (find("male").checked)
@@ -31,3 +31,26 @@ function calsPerDay(event) {
     console.log(heightInches, "=============");
 }
 console.log("==============")
+
+
+
+function calculateBmi() {
+                var bmiWeight = document.bmiForm.bmiWeight.value
+                var height = document.bmiForm.height.value
+                if(bmiWeight > 0 && height > 0){
+                var finalBmi = bmiWeight/(height/100*height/100)
+                document.bmiForm.bmi.value = finalBmi
+                if(finalBmi < 18.5){
+                document.bmiForm.meaning.value = "That you are too thin."
+                }
+                if(finalBmi > 18.5 && finalBmi < 25){
+                document.bmiForm.meaning.value = "That you are healthy."
+                }
+                if(finalBmi > 25){
+                document.bmiForm.meaning.value = "That you have overweight."
+                }
+                }
+                else{
+                alert("Please Fill in everything correctly")
+                }
+                }
