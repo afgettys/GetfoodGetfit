@@ -1,0 +1,33 @@
+
+function parseQuote(response) {
+    console.log(response);
+    $("#quote").text('"' + response.quoteText + '"-' + response.quoteAuthor)
+};
+var tag = document.createElement("script");
+tag.src = "http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=parseQuote";
+$('#quote').html(tag);
+
+console.log("=============")
+function calsPerDay(event) {
+    event.preventDefault();
+    function find(id) {
+        return document.getElementById(id)
+    }
+
+    var age = find("age").value;
+    var heightFeet = find("heightFeet").value * 12;
+    var heightInches = find("heightInches").value * 2.54;
+    var weight = find("weight").value / 2.2;
+    var result = 0;
+    console.log(document.getElementById("test").value);
+    console.log(heightInches, "----------------");
+
+    if (find("male").checked)
+        result = 66.47 + (13.75 * weight) + (5.0 * ((heightInches) + (heightFeet * 2.54)) - (6.75 * age))
+    else if (find("female").checked)
+        result = 665.09 + (9.56 * weight) + (1.84 * ((heightInches) + (heightFeet * 2.54)) - (4.67 * age))
+    console.log(result);
+    find("totalCals").innerHTML = Math.round(result)
+    console.log(heightInches, "=============");
+}
+console.log("==============")
