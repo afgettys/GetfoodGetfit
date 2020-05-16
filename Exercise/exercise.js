@@ -32,7 +32,7 @@ $('#weights').click(function(){
     $('body').css("background-repeat", "repeat");
     $('.container').css("visibility", "visible");
     $('.container').empty();
-    $('.container').css("height", "720px");
+    $('.container').css("height", "710px");
     $('.container').append("Contrary to popular belief, weight lifting isn’t just about bulking up and building muscle mass.  Although lifting weights is great for gaining muscle, the benefits of it go way beyond that.  At a heavy weight and low repetitions, strength training can improve one’s overall physical and mental health.  At high repetitions, lifting weights promotes hypertrophy and can even be a form of cardio.  It is also amazing for toning up and bettering one’s aesthetics.<br><strong>Some benefits of weight lifting include:</strong><ul><li>keeping your bones strong and healthy</li><li>boosting metabolism and fat loss</li><li>regulating insulin and lowering inflammation</li><li>improving posture, sleep, mood, and energy levels</li><improving strengh and endurance</li><li>improving balance and reducing the risk of falls</li></ul><strong>Compound vs. Isolation Movements</strong><br>There are two main movements when it comes to weight lifting.  Compound movements are exercises that work multiple muscle groups at the same time.  Isolation movements target a specific muscle.  If you are doing a split of both in your workout, you typically want to start with the compound movements and finish with the isolations to burn out specific muscles at the end. ");
     $('.container').append(compoundiso);
 });
