@@ -1,0 +1,336 @@
+#logo {
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(runningman.png);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: 0px 81px;
+
+
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+}
+
+.top-bar-left {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.top-bar-right ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar-right li {
+    list-style: none;
+    
+}
+
+.top-bar-right li a {
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.top-bar-right li:hover {
+    background-color: #B2D8B2;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 650px) {
+    .toggle-button {
+        display: flex;
+    }
+    .top-bar-right{
+        display: none;
+        width: 100%;
+    }
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-bar-right ul {
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .top-bar-right li {
+        text-align: center;
+    }
+    .top-bar-right li a {
+        padding: .5rem 1rem;
+
+    }
+    .top-bar-right.active{
+        display: flex;
+    }
+}
+
+
+
+#backarrow {
+    padding-left: 30px;
+}
+
+.isomovements{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.compoundmovements {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.squats {
+    background-color: rgba(255, 255, 255, 0.479);
+    font-size: 35px;
+    padding-left: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+.bench {
+    background-color: rgba(255, 255, 255, 0.479);
+    font-size: 35px;
+    padding-left: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+.deadlift {
+    background-color: rgba(255, 255, 255, 0.479);
+    font-size: 35px;
+    padding-left: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.curl {
+    background-color: rgba(255, 255, 255, 0.479);
+    font-size: 35px;
+    padding-left: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.tricep {
+    background-color: rgba(255, 255, 255, 0.479);
+    font-size: 35px;
+    padding-left: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+#favicon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+
+
+.social-footer {
+    overflow: hidden;
+    padding: 5px;
+    height: 65px;
+    width: 100%;
+    background: #D8D8D8;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .social-footer-left{
+    color: #005900;
+    padding-top: 25px;
+      font-size: 25px;
+      font-weight: bolder;
+      margin-left: 15px;
+      margin-right: 10px;
+  }
+  .social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+    text-align: center;
+  }
+  .social-footer .social-footer-icons .fa {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #005900;
+  }
+  .social-footer .social-footer-icons .fa:hover {
+    color: #4A4A4A;
+    transition: color 0.3s ease-in;
+  }
+  #right{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  #home{
+    padding-left: 20px;
+    padding-right: 10px;}
+  #exer{
+    padding-left: 20px;
+    padding-right: 20px;}
+  #food{
+    padding-left: 20px;
+    padding-right: 20px;}
+  #contact{
+    padding-left: 20px;
+    padding-right: 20px;}
+
+
+
+
+/* .row {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 2px;
+    background-image: url(health.png);
+    background-size: cover;
+    
+  
+} */
+    
+
+
+
+h2 {
+    padding: 20px;
+}
+
+.container {
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+    height: 750px;
+    width: 400px;
+    background-color: #918b8bee;
+    box-shadow: 0px 0px 10px 2px;
+    padding: 20px;
+    
+}
+
+
+
+       
+
+
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #00590063;
+    /* position: fixed; */
+    height: 100%;
+    overflow: auto;
+    display: inline-block;
+    border-radius: 15px 15px 15px 15px;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  /* END */
+
+ 
+  
