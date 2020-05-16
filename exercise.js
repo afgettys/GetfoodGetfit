@@ -8,7 +8,7 @@ var backarrow = $("<i id='backarrow' class='fas fa-arrow-left'></i>");
 
 
 $('#cardio').click(function(){
-    $('body').css("background-image", "url(cardio.png)");
+    $('body').css("background-image", "url(assets/cardio.png)");
     $('body').css("background-repeat", "no-repeat");
     
     $('.container').css("visibility", "visible");
@@ -18,7 +18,7 @@ $('#cardio').click(function(){
 });
 
 $('#yoga').click(function(){
-    $('body').css("background-image", "url(yoga.jpg)");
+    $('body').css("background-image", "url(assets/sunset.jpg)");
     $('body').css("background-repeat", "no-repeat");
     $('.container').css("visibility", "visible");
     $('.container').empty();
@@ -27,7 +27,7 @@ $('#yoga').click(function(){
 });
 
 $('#weights').click(function(){
-    $('body').css("background-image", "url(weight.jpg)");
+    $('body').css("background-image", "url(assets/weight.jpg)");
     
     $('body').css("background-repeat", "repeat");
     $('.container').css("visibility", "visible");
