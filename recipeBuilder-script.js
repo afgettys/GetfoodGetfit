@@ -68,14 +68,17 @@ $(document).ready(function () {
     var baseURL = "https://api.edamam.com/search?q=";
     var preset_URLQUERY = "";
     var recipeResponse = [];
-    /* var textObj = {}; */
+    var recipeObj = {};
+    var arry_recipeObj = [];
+    var checkerVar = [];
+   
 
     /* PRESET DIET SUBMIT /CLEAR */
     $("#presetDietsubmitBtn").on("click", function () {
         
         $(".recipeDump").empty();
         $(".recipesPage").css("display", "block");
-        var foodType = "beef"; /* have a mixed up array with different food items here */
+        var foodType = "beef,chicken,fish,pork"; /* have a mixed up array with different food items here */
         presetNumberOfRecipes = `&from=0&to=` + ($(`#presetNumberOfRecipes`).val() || 5);
 
         /* BUILD URL QUERY SEARCH STRING */
@@ -98,17 +101,24 @@ $(document).ready(function () {
                     console.log("NO RECIPES LOADED");
                 } else {
 
+                    
+                    recipeObj = JSON.parse(JSON.stringify(response));
+               
+                   
+
+
+
                     for (var i = 0; i <= r_numberOfRecipes; i++) {
                         recipeResponse.push(JSON.stringify(response.hits[i]));
                         r_img = JSON.stringify(response.hits[i].recipe.image);
                         https_index = r_img.substring(r_img.indexOf("https"));
                         https_index = https_index.slice(0, -1);
-                        console.log(`URL IMAGE URL: ${https_index}`)
+                    /*     console.log(`URL IMAGE URL: ${https_index}`) */
                         $(".recipeDump").append(` 
                             <div class="recipe1">
                             <img class="recipe-img float-left" src="
                             ${https_index}" alt="Generated Recipe Image" data-missing-img = "assets/missingImgPlaceholder.png">
-                            <h3 class="top-right recipe-title">${JSON.stringify(response.hits[i].recipe.label)}</h3> <br>
+                            <h2 class="top-right recipe-title">${JSON.stringify(response.hits[i].recipe.label)}</h2> <br>
                             <strong> Recipe URL: </strong> <p> <a href="#" class = "recipe-URL"> ${JSON.stringify(response.hits[i].recipe.url)}   </a> </p>
                             <strong> Meal-Type: </strong> <p class = "recipe-mealType"> ${JSON.stringify(response.hits[i].recipe.mealType)} </p>
                             <strong> Dish Type: </strong> <p class = "recipe-dishType">${JSON.stringify(response.hits[i].recipe.dishType)}</p> <br>
@@ -138,7 +148,33 @@ $(document).ready(function () {
 
     $(document).on("click", ".saveRecipeBtn", function(){
         console.log("you pressed me");
-        console.log($(this).attr("id"));
+
+        /* saveBtn1 */
+        var index = $(this).attr("id").substring(7);
+     /*    console.log(`ID: ${$(this).attr("id")} is id number: ${index}`);
+      */
+        
+        
+
+       /*  console.log(recipeObj.hits[0]); */
+        arry_recipeObj.push(recipeObj.hits[index]);
+        localStorage.setItem("LS_ObjArray", JSON.stringify(arry_recipeObj));
+        checkerVar = (localStorage.getItem("LS_ObjArray"));
+ /*        console.log(checkerVar);
+        console.log(typeof(checkerVar));
+        console.log(typeof(JSON.parse(checkerVar))); */
+      /*   var wtf = JSON.parse(checkerVar);
+
+        console.log(wtf[0]); */
+        
+        
+        
+        
+      
+       
+
+
+
         
     
     })

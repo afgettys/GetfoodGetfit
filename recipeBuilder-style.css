@@ -1,6 +1,187 @@
 /* GLOBAL CSS */
 
- 
+/* TOP BAR */
+
+/* AMANDA */
+.top-bar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-family: 'Playfair Display', serif;
+}
+
+#logo{
+  height: 2.0rem;
+}
+
+.top-bar-left {
+
+font-size: 1.6rem;
+margin: .5rem;
+padding-right: 0;
+}
+.top-bar-right ul {
+font-weight: bolder;
+margin: 0;
+padding: 0;
+display: flex;
+font-size: 1.3rem;
+}
+.top-bar-right li {
+list-style: none;
+}
+.top-bar-right li a {
+text-decoration: none;
+padding: 1rem;
+display: block;
+}
+.top-bar-right li:hover {
+background-color: #B2D8B2;
+border-radius: 5px;
+}
+.toggle-button {
+position: absolute;
+top: .75rem;
+right: 1rem;
+display: none;
+flex-direction: column;
+justify-content: space-between;
+width: 31px;
+height: 10px;
+}
+.toggle-button .bar {
+height: 3px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+}
+@media (max-width: 650px) {
+.toggle-button {
+display:flex;
+}
+.top-bar-right{
+display: none;
+width: 100%;
+}
+.top-bar {
+flex-direction: column;
+align-items: flex-start;
+}
+.top-bar-right ul {
+width: 100%;
+flex-direction: column;
+}
+.top-bar-right li {
+text-align: center;
+}
+.top-bar-right li a {
+padding: .5rem 1rem;
+}
+.top-bar-right.active{
+display: flex;
+}
+}
+
+/* ISAIAH */
+.translucent-form-overlay {
+    max-width: 400px;
+    width: 50%;
+    background-color: #005900;
+    padding: 20px;
+    color: #fefefe;
+  }
+  
+  .translucent-form-overlay .columns.row {
+    display: block;
+  }
+  
+  .translucent-form-overlay h3, .translucent-form-overlay label {
+    color: #fefefe;
+  }
+  
+  .translucent-form-overlay input, .translucent-form-overlay select {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::-webkit-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input:-ms-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::placeholder {
+    color: #8a8a8a;
+  }
+  
+  
+  .social-footer {
+    padding: 5px;
+    height: 65px;
+    background: #D8D8D8;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .social-footer-left p{
+    color: #005900;
+    padding-top: 30px;
+      font-size: 15px;
+      margin-left: 15px;
+      margin-right: 10px;
+      text-align: center;
+      font-weight: bold;
+  }
+  
+  .social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  .social-footer .social-footer-icons .fa {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #005900;
+    
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+  }
+  
+  #right{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  #home{
+    padding-left: 20px;
+    padding-right: 10px;}
+  #exer{
+    padding-left: 20px;
+    padding-right: 20px;}
+  #food{
+    padding-left: 20px;
+    padding-right: 20px;}
+  #contact{
+    padding-left: 20px;
+    padding-right: 20px;} 
+  
+
+/*  */
+
+/*  */
 .button {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -51,7 +232,7 @@ body{
 #greenText{
     /* color: green; */
     font-weight:bold;
-    background-color:rgba(13, 139, 24, 0.596);
+    background-color:#005900 ;
 }
 
 #greenText:hover{
@@ -76,9 +257,9 @@ body{
     background-color: green;
     padding: 26px;
 }
-
+ 
 .mainContainer {
-    background-color: rgba(48, 189, 48, 0.945);
+    background-color: #005900 ;
     margin-left: 45px;
     margin-right: 45px;
     /* border: 2px white solid; */
@@ -86,7 +267,7 @@ body{
 
 .dietToggleForm {
     color: white;
-    background-color: rgba(48, 189, 48, 0.945);
+    background-color: #005900 ;
 }
 
 .presetDietForm {
@@ -197,7 +378,7 @@ body{
 }
 
 #receipeBuilderForeground {
-    background-color: rgb(65, 129, 1);
+    background-color: #005900 ;
     padding: 0px, 2px, 2px, 2px;
 }
 
@@ -259,10 +440,10 @@ body{
 }
 
 .recipeError img{
+    display:block;
     margin-left: auto;
     margin-right: auto;
-
-    width:100%;
+    width:675px;
 }
 .recipe-img{
     border: green 4px dotted;

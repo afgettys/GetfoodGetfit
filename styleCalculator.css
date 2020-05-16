@@ -4,10 +4,13 @@
   background-color: #005900;
   padding: 20px;
   color: #fefefe;
+<<<<<<< HEAD
   /* margin-top: 10px; */
   margin-bottom: 100px;
   margin: 50px;
   
+=======
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
 }
 
 .translucent-form-overlay .columns.row {
@@ -36,12 +39,17 @@
 
 
 .social-footer {
+<<<<<<< HEAD
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   padding: 5px;
   height: 70px;
+=======
+  padding: 5px;
+  height: 65px;
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
   background: #D8D8D8;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -57,8 +65,13 @@
   color: #005900;
   padding-top: 30px;
     font-size: 15px;
+<<<<<<< HEAD
     margin-left: 10px;
     margin-right: 15px;
+=======
+    margin-left: 15px;
+    margin-right: 10px;
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
     text-align: center;
     font-weight: bold;
 }
@@ -82,16 +95,28 @@
   transition: color 0.3s ease-in;
 }
 
+<<<<<<< HEAD
 #rightFooter{
   padding-left: 10px;
   padding-right: 10px;
   font-weight: bolder;
   font-size: 15px;
+=======
+#right{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
 }
 #home{
   padding-left: 20px;
   padding-right: 10px;}
+<<<<<<< HEAD
 #exerFooter{
+=======
+#exer{
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
   padding-left: 20px;
   padding-right: 20px;}
 #food{
@@ -100,6 +125,7 @@
 #contact{
   padding-left: 20px;
   padding-right: 20px;} 
+<<<<<<< HEAD
   
   .top-bar {
     display: flex;
@@ -164,3 +190,5 @@
     .top-bar-right.active{
     display: flex;}
     }
+=======
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b

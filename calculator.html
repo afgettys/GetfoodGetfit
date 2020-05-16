@@ -20,6 +20,7 @@
 
 <body>
   <div>
+<<<<<<< HEAD
     <div class="top-bar" class="fixed">
       <div class="top-bar-left" id="left" style="color:#005900">
         <p>Getfood Getfit<a href="index.html"><img src="assets/favicon.png"></a></p>
@@ -139,12 +140,85 @@
 
 
 
+=======
+      <div class="translucent-form-overlay">
+          <form>
+            <h3>Calories Calculator</h3>
+            <div class="row columns">
+              <label>Weight in Pounds
+                <input type="text" id="weight" onsubmit="calsPerDay()" >
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Gender
+                <select name="status" type="text">
+                  <option value="male" id="male" onsubmit="calsPerDay()">Male</option>
+                  <option value="female" id="female" onsubmit="calsPerDay()">Female</option>
+                </select>
+              </label>
+            </div>
+            <div class="row columns">
+              <label>Age
+                <input type="text" name="age" id="age" onsubmit="calsPerDay()">
+              </label>
+            </div>
+            <div class="row">
+              <label class="columns small-12">Height</label>
+              <div class="columns small-6">
+                <input type="number" min="0" id="heightFeet" placeholder="Feet" onsubmit="calsPerDay()">
+              </div>
+              <div class="columns small-6">
+                <input type="number" min="0" id="heightInches" placeholder="Inches" onsubmit="calsPerDay()">
+              </div>
+            </div>
+              <input type="submit" value="Submit">
+         </form>
+        </div>
+
+    <div>
+      <h2>Total Calories</h2>
+      <p>Base metabolic rate: <span id="totalCals"></span> cal per day</p>
+    </div>
+
+    <footer class="social-footer">
+      <div class="social-footer-icons">
+        <ul class="menu simple">
+          <p>&copy; 2020 Getfit Inc.</p>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="social-footer-left">
+        <p id="quote"></p>
+        <p id="author"></p>
+      </div>
+      <div id="qoute"></div>
+
+      <div class="top-bar-right" id="right" style="color: #005900">
+        <a href="file:///Users/APires/Desktop/HA/Project1/test.html"><i class="fas fa-home" id="home" style="color:#005900"></i></a>
+        <a href="Exercise" style="color:#005900" id="exer">Get Fit </a>
+        <a href="#" style="color:#005900" id="getfood">Get food </a>
+        <a href="file:///Users/APires/Desktop/HA/Project1/contact/contact.html" style="color: #005900" id="contact">Contact
+          Us </a>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="calculator.js">
+    
+
+
+//     <form name="bmiForm" id="bmi">
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
 //             Your Weight(kg): <input type="text" name="weight" size="10"><br />
 //             Your Height(cm): <input type="text" name="height" size="10"><br />
 //             <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
 //             Your BMI: <input type="text" name="bmi" size="10"><br />
 //             This Means: <input type="text" name="meaning" size="25"><br />
 //             <input type="reset" value="Reset" />
+<<<<<<< HEAD
 // //         </form>
 
 
@@ -154,6 +228,37 @@
 
 
     </script>
+=======
+//         </form>
+
+
+
+
+
+// 10:29
+// function calculateBmi() {
+//                 var weight = document.bmiForm.weight.value
+//                 var height = document.bmiForm.height.value
+//                 if(weight > 0 && height > 0){
+//                 var finalBmi = weight/(height/100*height/100)
+//                 document.bmiForm.bmi.value = finalBmi
+//                 if(finalBmi < 18.5){
+//                 document.bmiForm.meaning.value = "That you are too thin."
+//                 }
+//                 if(finalBmi > 18.5 && finalBmi < 25){
+//                 document.bmiForm.meaning.value = "That you are healthy."
+//                 }
+//                 if(finalBmi > 25){
+//                 document.bmiForm.meaning.value = "That you have overweight."
+//                 }
+//                 }
+//                 else{
+//                 alert("Please Fill in everything correctly")
+//                 }
+//                 }
+
+  </script>
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
 </body>
 
 </html>

@@ -19,7 +19,11 @@ function calsPerDay(event) {
     var heightInches = find("heightInches").value * 2.54;
     var weight = find("weight").value / 2.2;
     var result = 0;
+<<<<<<< HEAD
     // console.log(document.getElementById("test").value);
+=======
+    console.log(document.getElementById("test").value);
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
     console.log(heightInches, "----------------");
 
     if (find("male").checked)
@@ -31,6 +35,7 @@ function calsPerDay(event) {
     console.log(heightInches, "=============");
 }
 console.log("==============")
+<<<<<<< HEAD
 
 
 
@@ -54,3 +59,5 @@ function calculateBmi() {
                 alert("Please Fill in everything correctly")
                 }
                 }
+=======
+>>>>>>> ca0b7692a551ac97eca1fb74b1a22c4f89b5809b
