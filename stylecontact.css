@@ -13,15 +13,20 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 font-family: 'Playfair Display', serif;
+
 }
 .top-bar-left {
-font-size: 1.5rem;
+
+font-size: 1.6rem;
 margin: .5rem;
+padding-right: 0;
 }
 .top-bar-right ul {
+font-weight: bolder;
 margin: 0;
 padding: 0;
 display: flex;
+font-size: 1.3rem;
 }
 .top-bar-right li {
 list-style: none;
@@ -43,7 +48,7 @@ display: none;
 flex-direction: column;
 justify-content: space-between;
 width: 31px;
-height: 21px;
+height: 10px;
 }
 .toggle-button .bar {
 height: 3px;
@@ -130,8 +135,8 @@ display: block;
 }
 
 * {
-    box-sizing: border-box;
-  }
+box-sizing: border-box;
+ }
   
 
   input[type=text], select, textarea {
@@ -201,7 +206,9 @@ display: block;
   
   img{
     width: 30%;
-    margin: 0
+    margin: 0;
+    height: fit-content;
+    border:0
   }
  
   footer{
