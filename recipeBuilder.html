@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <img src="assets/bg-Images/watermelon-bg.png" alt="watermelon background image" id="bg"> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GetFood.GetFit.</title>
+  <!-- foundation-float.min.css: Compressed CSS with legacy Float Grid -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
+    integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+
+  <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+    integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+
+  <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
+    integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="recipeBuilder-style.css">
+
+
+</head>
+
+<body>
+
+  <div class="top-bar" class="fixed">
+    <div class="top-bar-left" id="left" style="color:#005900">
+      <p>Getfood Getfit<a href="index.html"><img src="assets/favicon.png" id="logo"></a></p>
+    </div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="top-bar-right" id="right" style="color:#005900">
+      <ul>
+        <li><a href="calculator.html" style="color:#005900" id="bmi">Check your BMI</a></li>
+        <li><a href="exercise.html" style="color:#005900" id="exer">Exercise</a></li>
+        <li><a href="recipeBuilder.html" style="color:#005900" id="getfood">Recipe Builder</a></li>
+        <li><a href="recipeLocker.html" style="color:#005900" id="getfood">Recipe Locker</a></li>
+        <li><a href="contact.html" style="color:#005900" id="contact">Contact Us </a></li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+  <div class="dietIntroText text-center" id="top">
+    <!-- INTRO SPLASH PAGE -->
+
+    <h2 id="topTitle"> Plan your habits. Plan your health. Plan your meals.</h2>
+    <p class="lead"> Planning ahead is the key to success! Use our preset recipe search to help us <span id="greenText">
+        help you</span> prepare
+      your meal plan! You can choose from the preset diets or create your own custom recipe search below!</p>
+  </div>
+
+
+  <!-- MAIN ACCORDION  -->
+  <div class="accordion mainContainer" data-accordion>
+
+    <!-- PRE-DEFINED DIET PANE  -->
+    <div class="accordion-item is-active topPane" data-accordion-item>
+      <a href="#" class="accordion-title topTitle"> <br> <br> PRESET DEFINED DIETS</a>
+      <div class="accordion-content" data-tab-content>
+        <div class="row presetDietForm">
+
+          <div class="columns medium-6 large-6 small-12">
+            <!-- FIRST LEFT SIDE COLUMN (TOGGLES) -->
+
+            <fieldset class="form-group topPaneFieldset " id="topPaneFieldset">
+              <h3 class="text-center headerText">CHOOSE YOUR DIET </h3> <br><!--  TOP PANE HEADER -->
+              <fieldset class="presetMealTypeToggles text-center">
+                <!--  TOP PANE MEAL TYPE TOGGLES -->
+                <div class=" row text-center">
+                  <div class="columns small-6 medium-3 large-3">
+                    <div> Breakfest </div>
+                    <div class="switch small">
+                      <input class="switch-input " id="breakfast" type="radio" name="mealTypeGrp">
+                      <label class="switch-paddle " for="breakfast">
+                        <span class="show-for-sr"> breakfast toggle switch</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="columns small-6 medium-3 large-3">
+                    <div> Lunch </div>
+                    <div class="switch small">
+                      <input class="switch-input " id="lunch" type="radio" name="mealTypeGrp">
+                      <label class="switch-paddle " for="lunch">
+                        <span class="show-for-sr"> lunch toggle switch</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="columns small-6 medium-3 large-3">
+                    <div> Dinner</div>
+                    <div class="switch small">
+                      <input class="switch-input " id="dinner" type="radio" name="mealTypeGrp">
+                      <label class="switch-paddle " for="dinner">
+                        <span class="show-for-sr"> dinner toggle switch</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="columns small-6 medium-3 large-3">
+                    <div> Snack </div>
+                    <div class="switch small">
+                      <input class="switch-input " id="snack" type="radio" name="mealTypeGrp">
+                      <label class="switch-paddle " for="snack">
+                        <span class="show-for-sr"> snack toggle switch</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <hr>
+              <div class="row presetDietToggles">
+
+                <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="paleo" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true" title="A diet based on the types of foods presumed to have been 
+                    eaten by early humans, consisting chiefly of meat, fish, vegetables, and fruit, and excluding dairy or 
+                     grain products and processed food.">PALEO</label><br>
+                  <input class="switch-input" id="paleo" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="paleo">
+                    <span class="show-for-sr">paleo toggle switch</span>
+                  </label>
+                </div>
+
+                <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="keto" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    Title="A diet based on you getting more calories from protein and fat and less from carbohydrates. You cut back most on the carbs that are easy to digest, like sugar, soda, pastries, and white bread">
+                    KETO</label><br>
+                  <input class="switch-input" id="keto-friendly" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="keto-friendly">
+                    <span class="show-for-sr">keto toggle switch</span>
+                  </label>
+                </div>
+
+                <!--  <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="atkins" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    Title="A diet based on you getting more calories from protein and fat and less from carbohydrates. You cut back most on the carbs that are easy to digest, like sugar, soda, pastries, and white bread">
+                    ATKINS</label><br>
+                  <input class="switch-input" id="atkins" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="atkins">
+                    <span class="show-for-sr">atkins toggle switch</span>
+                  </label>
+                </div> -->
+
+                <div class="switch round small columns medium-4 large-4 small-6">
+                  <label for="high-fiber" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    title=" A diet in which the individual consumes foods that meet or exceed the dietary reference intake (DRI) for dietary fiber ">
+                    HIGH-FIBER </label><br>
+                  <input class="switch-input" id="high-fiber" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="high-fiber">
+                    <span class="show-for-sr">high-fiber toggle switch</span>
+                  </label>
+                </div>
+
+                <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="high-protein" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    title="A diet in which 20% or more of the total daily calories comes from protein. Most high protein diets are high in saturated fat and severely restrict intake of carbohydrates. Slightly less fat content compared to the Keto diet">
+                    HIGH-PROTEIN </label><br>
+                  <input class="switch-input" id="high-protein" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="high-protein">
+                    <span class="show-for-sr">high-protein toggle switch</span>
+                  </label>
+                </div>
+
+                <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="low-carb" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    title="A diet that is low in carbohydrates, primarily found in sugary foods, pasta and bread. Instead, you eat whole foods including natural proteins, fats and vegetables. Compared to Keto or high protein diet, you can still consume carbs but at a low amount.">
+                    LOW-CARB </label><br>
+                  <input class="switch-input" id="low-carb" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="low-carb">
+                    <span class="show-for-sr">low-carb toggle switch</span>
+                  </label>
+                </div>
+
+                <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="low-fat" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    title=" A diet that restricts fat, and often saturated fat and cholesterol as well. Low-fat diets are intended to reduce the occurrence of conditions such as heart disease and obesity.">
+                    LOW-FAT</label><br>
+                  <input class="switch-input" id="low-fat" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="low-fat">
+                    <span class="show-for-sr">low-fat toggle switch</span>
+                  </label>
+                </div>
+
+                <div class="switch round small columns medium-3 large-3 small-6">
+                  <label for="low-sodium" class="has-tip" data-tooltip aria-haspopup="true"
+                    data-options="disable_for_touch:true"
+                    title=" A diet that restricts fat, and often saturated fat and cholesterol as well. Low-fat diets are intended to reduce the occurrence of conditions such as heart disease and obesity.">
+                    LOW-SODIUM</label><br>
+                  <input class="switch-input" id="low-sodium" type="radio" name="dietToggleGrp">
+                  <label class="switch-paddle" for="low-sodium">
+                    <span class="show-for-sr">low-sodium toggle switch</span>
+                  </label>
+                </div>
+
+              </div>
+              <br><br>
+
+              <!-- PRESET DIET NUMBER OF RECIPES GENERATED  -->
+              <div class="columns large-12 small-12 numberOfRecipes-Form text-center ">
+                <label for="numberOfRecipes" id="smallText"><small>Number of Recipes - (Min-5 Max-
+                    20)</small></label>
+                <input type="number" name="numberOfRecipes" id="presetNumberOfRecipes" min="5" max="20" placeholder=5>
+
+
+                <!-- PRESET DIET SUBMIT/CLEAR BUTTONS -->
+                <button type="submit" id="presetDietsubmitBtn" value="Submit" class="button large success"> <svg
+                    class="bi bi-file-earmark-arrow-down" width="1em" height="1em" viewBox="0 0 16 16"
+                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4 1h5v1H4a1 1 0 00-1 1v10a1 1 0 001 1h8a1 1 0 001-1V6h1v7a2 2 0 01-2 2H4a2 2 0 01-2-2V3a2 2 0 012-2z" />
+                    <path d="M9 4.5V1l5 5h-3.5A1.5 1.5 0 019 4.5z" />
+                    <path fill-rule="evenodd"
+                      d="M5.646 9.146a.5.5 0 01.708 0L8 10.793l1.646-1.647a.5.5 0 01.708.708l-2 2a.5.5 0 01-.708 0l-2-2a.5.5 0 010-.708z"
+                      clip-rule="evenodd" />
+                    <path fill-rule="evenodd" d="M8 6a.5.5 0 01.5.5v4a.5.5 0 01-1 0v-4A.5.5 0 018 6z"
+                      clip-rule="evenodd" />
+                  </svg> Submit </button>
+
+                <button type="submit" id="presetDietClearBtn" value="Reset" class="button large alert"><svg
+                    class="bi bi-x-square" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                      d="M14 1H2a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V2a1 1 0 00-1-1zM2 0a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2H2z"
+                      clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                      d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                      clip-rule="evenodd" />
+                    <path fill-rule="evenodd"
+                      d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                      clip-rule="evenodd" />
+                  </svg> Reset Form </button>
+              </div>
+
+
+            </fieldset> <!--  END OF 1ST FIELDSET -->
+
+
+          </div> <!--  END OF 1ST MAIN COL -->
+
+          <div class="columns medium-6 large-6 small-12 text-center dietInfoSidebar ">
+            <h3 class="headerText ">DIET INFORMATION:</h3>
+
+            <p class="dietInfoText slide-left "> Click on the toggle switches to learn about each preset diet!</p>
+            <div class="scrollImage">
+              <img src="assets/downArrowBanner.png" alt="" id="arrowDownBanner">
+            </div>
+          </div>
+
+          <!--      <div class="row">
+            <div class=" columns small-12 large-12 medium-12 buildRecipeForm text-center ">
+              <p>BUILD YOUR OWN RECIPE PLAN!</p>
+              <div class="switch large text-center">
+                <input class="switch-input" id="custom-recipe" type="checkbox" name="buildRecipeForm" data-state="false">
+                <label class="switch-paddle" for="custom-recipe">
+                  <span class="show-for-sr">custom recipe toggle switch</span>
+                </label>
+              </div>
+            </div>
+          </div> -->
+        </div> <!-- END OF MAIN ROW -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+    <!-- second accordion container -->
+
+    <div class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title topTitle bottomPane"> <br> <br> CUSTOM RECIPE BUILDER</a>
+      <div class="accordion-content" data-tab-content>
+
+
+        <!-- second accordion container -->
+        <fieldset class="form-group recipeOptionForm">
+          <div id="receipeBuilderForeground">
+            <legend id="builderText">Recipe Builder</legend>
+            <fieldset class="fieldset recipeBuilder success">
+
+              <!-- GENERATED RECIPE BUTTONS  -->
+              <div class="recipeBtnDump">
+                <div class="cusineBtnDump"></div>
+                <div class="typeOfDishDump"></div>
+              </div>
+
+              <!-- RESETS RECIPE BUTTON FORM  -->
+              <div class="row">
+
+                <div class="columns large-6 small-6 medium-6">
+                  <input type="submit" value="Reset Entire Form" id=""
+                    class="button small alert resetCustomOptionsBtn text-center">
+
+                </div>
+                <div class="columns large-6 small-6 medium-6">
+                  <input type="submit" value="Submit Custom Recipe" id=""
+                    class="button small success submitCustomOptionsBtn text-center">
+
+                </div>
+              </div>
+          </div>
+
+
+          <fieldset>
+
+            <div class=" row mealTypeContainer text-center">
+              <div class="columns small-6 medium-3 large-3">
+                <p> Breakfast </p>
+                <div class="switch tiny">
+                  <input class="switch-input " id="Breakfast" type="radio" name="mealTypeGrp">
+                  <label class="switch-paddle " for="Breakfast">
+                    <span class="show-for-sr"> Breakfast toggle switch</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="columns small-6 medium-3 large-3">
+                <p> Lunch </p>
+                <div class="switch tiny">
+                  <input class="switch-input " id="lunch" type="radio" name="mealTypeGrp">
+                  <label class="switch-paddle " for="lunch">
+                    <span class="show-for-sr"> lunch toggle switch</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="columns small-6 medium-3 large-3">
+                <p> Dinner</p>
+                <div class="switch tiny">
+                  <input class="switch-input " id="dinner" type="radio" name="mealTypeGrp">
+                  <label class="switch-paddle " for="dinner">
+                    <span class="show-for-sr"> dinner toggle switch</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="columns small-6 medium-3 large-3">
+                <p> Snack </p>
+                <div class="switch tiny">
+                  <input class="switch-input " id="snack" type="radio" name="mealTypeGrp">
+                  <label class="switch-paddle " for="snack">
+                    <span class="show-for-sr"> snack toggle switch</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset typeOfDishOptionSet text-center">
+            <legend> Type of Dish</legend>
+            <button id="starter" class="button small" data-delete="false">Starter</button>
+            <button id="soup" class=" button small" data-delete="false">Soup</button>
+            <button id="preps" class=" button small" data-delete="false">Preps</button>
+            <button id="salad" class=" button small" data-delete="false">Salad</button>
+            <button id="maincourse" class=" button small" data-delete="false">Main Course</button>
+            <button id="sandwiches" class=" button small" data-delete="false">Sandwiches</button>
+            <button id="sideDish" class=" button small" data-delete="false">Side Dish</button>
+            <button id="dessert" class=" button small" data-delete="false">Dessert</button>
+          </fieldset>
+
+          <fieldset class="fieldset cusineOptionSet text-center">
+            <legend>Cusine Type:</legend>
+            <button id="american" class="primary button small" data-delete="false">American</button>
+            <button id="asian" class="primary button small" data-delete="false">Asian</button>
+            <button id="british" class="primary button small" data-delete="false">British</button>
+            <button id="caribbean" class="primary button small" data-delete="false">Carribean</button>
+            <button id="central-europe" class="primary button small" data-delete="false">Central-Europe</button>
+            <button id="chinese" class="primary button small" data-delete="false">Chinese</button>
+            <button id="eastern-european" class="primary button small" data-delete="false">Eastern-European</button>
+            <button id="french" class="primary button small" data-delete="false">French</button>
+            <button id="indian" class="primary button small" data-delete="false">Indian</button>
+            <button id="italian" class="primary button small" data-delete="false">Italian</button>
+            <button id="japanese" class="primary button small" data-delete="false">Japanese</button>
+            <button id="kosher" class="primary button small" data-delete="false">Kosher</button>
+            <button id="mediterranean" class="primary button small" data-delete="false">Mediterranean</button>
+            <button id="mexican" class="primary button small" data-delete="false">Mexican</button>
+            <button id="middle-eastern" class="primary button small" data-delete="false">Middle Eastern</button>
+            <button id="nordic" class="primary button small" data-delete="false">Nordic</button>
+            <button id="south-american" class="primary button small" data-delete="false">South American</button>
+            <button id="south-asian" class="primary button small" data-delete="false">South East Asian</button>
+          </fieldset>
+
+          <fieldset class="fieldset dietaryOptionSet text-center">
+            <legend>Dietary Options:</legend>
+            <button id="alcohol-free" class="success button small" data-delete="false">Alcohol-Free</button>
+            <button id="celery-free" class="success  button small" data-delete="false">Celery-Free</button>
+            <button id="crustcean-free" class="success button small" data-delete="false">Crustcean-Free</button>
+            <button id="egg-free" class="success button small" data-delete="false">Egg-Free</button>
+            <button id="fish-free" class="success button small" data-delete="false">Fish-Free</button>
+            <button id="fodmap-free" class="success button small" data-delete="false">FODMAP-Free</button>
+            <button id="gluten-free" class="success button small" data-delete="false">Gluten-Free</button>
+            <button id="kidney-free" class="success button small" data-delete="false">Kidney-Friendly</button>
+            <button id="kosher" class="success button small" data-delete="false">Kosher</button>
+            <button id="low-potassium" class="success button small" data-delete="false">Low potassium</button>
+            <button id="mustard-free" class="success button small" data-delete="false">Mustard-Free</button>
+            <button id="lupine-free" class="success button small" data-delete="false">Lupine-free</button>
+            <button id="no-oil" class="success button small" data-delete="false">No oil</button>
+            <button id="no-sugar" class="success button small" data-delete="false">No Sugar</button>
+            <button id="no-peanuts" class="success button small" data-delete="false">Peanut-Free</button>
+            <button id="Pescatarian" class="success button small" data-delete="false">Pescatarian Only</button>
+            <button id="pork-free" class="success button small" data-delete="false">Pork-Free</button>
+            <button id="red-meat-free" class="success button small" data-delete="false">Red Meat-Free</button>
+            <button id="seasame-free" class="success button small" data-delete="false">Seasame-Free</button>
+            <button id="shellfish-free" class="success button small" data-delete="false">Shellfish-Free</button>
+            <button id="soy-free" class="success button small" data-delete="false">Soy-Free</button>
+            <button id="sugar-conscious" class="success button small" data-delete="false">Sugar-Conscious</button>
+            <button id="tree-nut-free" class="success button small" data-delete="false">Tree Nut-Free</button>
+            <button id="vegan" class="success button small" data-delete="false">Vegan Only</button>
+            <button id="vegetarian" class="success button small" data-delete="false">Vegetarian Only</button>
+            <button id="wheat-free" class="success button small" data-delete="false">Wheat-Free</button>
+          </fieldset>
+
+          <div class="finalBtnGrp text-center">
+
+            <!-- NUMBER OF RECIPE GENERATED -->
+            <div class="numberOfRecipes-Form">
+              <label for="numberOfRecipesF">Number of Recipes <small>(Min-5 Max- 20)</small></label>
+              <input type="number" name="numberOfRecipesF" id="numberOfRecipes">
+            </div>
+            <input type="submit" value="Submit Form" class="button large success submitCustomOptionsBtn" id="">
+            <input type="submit" value="Clear Form" class="button large alert resetCustomOptionsBtn" id="">
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br>
+
+
+  <div class="recipesPage >
+
+
+
+    <h1 class=" text-center recipeSection"> <strong> <svg class="bi bi-card-heading" width="1.1em" height="1.1em"
+        viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M14.5 3h-13a.5.5 0 00-.5.5v9a.5.5 0 00.5.5h13a.5.5 0 00.5-.5v-9a.5.5 0 00-.5-.5zm-13-1A1.5 1.5 0 000 3.5v9A1.5 1.5 0 001.5 14h13a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0014.5 2h-13z"
+          clip-rule="evenodd" />
+        <path fill-rule="evenodd"
+          d="M3 8.5a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0 2a.5.5 0 01.5-.5h6a.5.5 0 010 1h-6a.5.5 0 01-.5-.5z"
+          clip-rule="evenodd" />
+        <path d="M3 5.5a.5.5 0 01.5-.5h9a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-9a.5.5 0 01-.5-.5v-1z" />
+      </svg> RECIPES </strong></h1>
+    <hr><br>
+    <div class="recipeDump"></div>
+
+    <div class="recipeError">
+      <img src="assets/errorPage.png" alt="" class="text-center errorImage">
+    </div>
+  </div>
+  </div>
+
+  <br>
+  <button class="button primary btnNav text-center"> <a href="#top" class="btnNavID" id="btnNavID">TOP</a></button>
+
+  <!--  <div class="upArrowStickyDiv">
+    <a href=""><img src="assets/StickiedUpArrow.png" alt="Up Nav Arrow" class="stickiedArrow"></a>
+  </div> -->
+  <footer class="social-footer">
+    <div class="social-footer-icons">
+      <ul class="menu simple">
+        <p>&copy; 2020 Getfit Inc.</p>
+        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="social-footer-left">
+      <p id="quote"></p>
+      <p id="author"></p>
+    </div>
+    <div id="qoute"></div>
+
+    <div class="top-bar-right" id="right" style="color: #005900">
+      <a href="index.html"><i class="fas fa-home" id="home" style="color:#005900"></i></a>
+      <a href="exercise.html" style="color:#005900" id="exer">Get Fit </a>
+      <a href="recipeBuilder.html" style="color:#005900" id="getfood">Get food </a>
+      <a href="contact.html" style="color: #005900" id="contact">Contact
+        Us </a>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/bdce3ec8f5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"
+    integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+  <script src="recipeBuilder-script.js"></script>
+</body>
+
+</html>
