@@ -14,31 +14,67 @@
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
     integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/bdce3ec8f5.js" crossorigin="anonymous"></script>  
-  <link rel="stylesheet" type="text/css" href="stylecontact.css">
+  <!--<link rel="stylesheet" type="text/css" href="newcontactstyle.css"> -->
   <title>Contact</title>
+  <style>
+  body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("assets/rest.jpg");
+  
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .menu {
+  width: 25%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.main {
+  width: 75%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+</style>
 </head>
+
 <body>
-  <div class="top-bar" class="fixed"><div class="top-bar-left" id="left" style="color:#005900">
-    <p>Getfood Getfit<a href="file:///Users/APires/Desktop/HA/Project1/test.html"><img src="assets/favicon.png"></a></p>
-    </div>
-    <a href="#" class="toggle-button">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-    </a>
-    <div class="top-bar-right" id="right" style="color:#005900">
-    <ul>
-    <li><a href="#" style="color:#005900" id="bmi">Check your BMI</a></li>
-    <li><a href="Exercise" style="color:#005900" id="exer">Exercise</a></li>
-    <li><a href="recipeBuilder.html" style="color:#005900" id="getfood">Receipt Builder</a></li>
-    <li><a href="recipeLocker.html" style="color:#005900" id="getfood">Receipt Locker</a></li>
-    <li><a href="file:///Users/APires/Desktop/HA/Project1/contact/contact.html" style="color:#005900"
-    id="contact">Contact Us </a></li>
-    </ul>
-    </div>
-    </div>
-    
+  <div class="top-bar" class="fixed">
+  <div class="top-bar-left" id="left" style="color:#005900">
+    <p>Getfood Getfit<img src="assets/favicon.png"></p>
+  </div>
+  <a href="#" class="toggle-button"><span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+  </a>
+  <div class="top-bar-right" id="right" style="color:#005900">
+  <ul>
+    <li><a href="file:///Users/APires/Desktop/HA/Project1/test.html"><i class="fas fa-home" id="home" style="color:#005900"></i></a></li>
+    <li><a href="Exercise" style="color:#005900" id="exer">Get Fit </a></li><li>
+    <a href="#" style="color:#005900" id="getfood">Get food </a></li><li>
+    <a href="file:///Users/APires/Desktop/HA/Project1/contact/contact.html" style="color:#005900" id="contact">Contact Us</a></li>
+  </ul>
+  </div> 
+  </div>
+  
+</div>
   <div class="phrase">
     <p>Weather you need further information about restaurants,
       need a new exercise group to boost your mood
@@ -50,8 +86,11 @@
         <p class="article-elipsis">Know a new spot and want us to know about it ?
         Would like to have your stablishment known?
         Let's exchange our experiences.</p>
-        
+       
       </div>
+
+    
+      
       <div class="menu">
         <form action="/action_page.php">
             <label for="fname">First Name</label>
@@ -64,23 +103,31 @@
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
             <input type="submit" value="Submit">
           </form>
+
       </div>
+      
       <div class="main">
         <div class="article-social">
-        <h1>Follow us on social media<a href="https://www.facebook.com/yoga.code.7" class="social-icon-button facebook"><i class="fa fa-facebook"
+            <a href="https://www.facebook.com/yoga.code.7" class="social-icon-button facebook"><i class="fa fa-facebook"
               aria-hidden="true"></i></a>
           <a href="https://www.instagram.com/?hl=pt" class="social-icon-button instagram"><i class="fa fa-instagram"
               aria-hidden="true"></i></a>
-          <a href="#" class="social-icon-button google-plus"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></h1>
-          </div>        
-<div class="bg-img"></div>     
-</div>  
+          <a href="#" class="social-icon-button google-plus"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+          </div>
+        
+<div class="bg-img">
+
+</div>
+<p>This example creates a form on a responsive image. Try to resize the browser window
+to see how it always will cover the whole width of the screen, and that it scales nicely on all screen sizes.</p>
+
+      
 <script src="contact.js"></script>
   
-<!--<footer>
+<footer>
 <p>The most valueable asset you have is you <i class="fas fa-heart fa-xm"></i></p>
 </div>
 </footer>
 </body>
 
-</html>-->
+</html>
