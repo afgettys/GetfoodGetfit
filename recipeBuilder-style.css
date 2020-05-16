@@ -1,0 +1,304 @@
+/* GLOBAL CSS */
+
+ 
+.button {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.button:active {
+    transform: scale(0.96, 0.96);
+}
+
+.topTitle {
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+ 
+/* #bg {
+    background-color: palegreen;
+    z-index: -1;
+    position: fixed;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+} */
+
+body{
+    overflow: visible;
+}
+.dietIntroText{
+    background-image: url(assets/mealPrepBanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: green 3px solid;
+    height: 515px;
+    padding: 35px;
+}
+
+.presetMealTypeToggles input{
+    vertical-align: top;
+}
+#greenText{
+    /* color: green; */
+    font-weight:bold;
+    background-color:rgba(13, 139, 24, 0.596);
+}
+
+#greenText:hover{
+    transform: scale(1.2,1.2);
+}
+#topTitle{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+/* 
+#mealPrepImg{
+    width: 450px;
+    height: auto;
+} */
+
+.dietIntroText{
+    margin-left: 45px;
+    margin-right: 45px;
+    color:white;
+    background-color: green;
+    padding: 26px;
+}
+
+.mainContainer {
+    background-color: rgba(48, 189, 48, 0.945);
+    margin-left: 45px;
+    margin-right: 45px;
+    /* border: 2px white solid; */
+}
+
+.dietToggleForm {
+    color: white;
+    background-color: rgba(48, 189, 48, 0.945);
+}
+
+.presetDietForm {
+    padding: 15px;
+}
+
+.headerText {
+    color: green;
+    font-weight: bold;
+}
+
+.dietInfoText {
+    background-color: white;
+    position: relative;
+
+    /*   color: green; */
+    font-size: 18px;
+    text-align: left;
+    border-radius: 28px;
+    letter-spacing: 1.8px;
+    padding: 16px;
+}
+
+.topPaneFieldset .switch {
+    padding: 32px;
+}
+
+#arrowDownBanner{
+    margin-top: 545px;
+}
+
+
+.upArrowStickyDiv{
+    overflow:visible;
+
+}
+
+/* .stickiedArrow img{
+    position:-webkit-sticky;
+    position:sticky;
+    overflow: visible;
+    top:0;
+    right: 0;
+}
+ */
+/* #downArrow{
+    width: 55px;
+    height: auto;
+    z-index:-1;
+}
+ */
+
+.mainSetDietContainer {
+    /*     background-image: url(assets/bg-Images/watermelon-container-BG.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat; */
+}
+
+.buildRecipeForm {
+    background-color: orange;
+    width: 100%;
+}
+
+.buildRecipeForm p {
+    color: white;
+    font-size: 29px;
+}
+
+.mealTypeContainer {
+    background-color: rgb(202, 240, 202);
+}
+
+/* ******************** */
+
+.recipeBuilder {
+    position: sticky;
+    top: 0;
+    background-color: rgb(202, 240, 202);
+    height: auto;
+    text-align: center;
+}
+
+ 
+.recipeOptionForm {
+    
+}
+
+#builderText {
+    color: white;
+    background: lightcoral
+}
+
+.typeOfDishOptionSet {
+    background-color: rgb(202, 240, 202);
+}
+
+.typeOfDishOptionSet button {
+    background-color: mediumslateblue;
+}
+
+.typeOfDishOptionSet button:hover {
+    background-color: rgb(66, 38, 230);
+}
+
+.cusineOptionSet {
+    background-color: rgb(202, 240, 202);
+}
+
+#receipeBuilderForeground {
+    background-color: rgb(65, 129, 1);
+    padding: 0px, 2px, 2px, 2px;
+}
+
+.dietaryOptionSet {
+    background-color: rgb(202, 240, 202);
+}
+
+.finalBtnGrp {
+    background-color: rgb(202, 240, 202);
+}
+
+.resetCustomOptionsBtn {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submitCustomOptionsBtn {
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+.dietToggleForm div {
+    /*     padding-left: 5px;
+     padding-right: 5px; */
+}
+
+#numberOfRecipes {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#smallText small {
+    color: black;
+    font-weight: bold;
+}
+
+.recipesPage{
+    display: none;
+    background-color:rgb(233, 233, 233);
+    padding: 32px;
+    margin-left: 45px;
+    margin-right: 45px;
+    border: green 8px solid;
+    border-radius: 25px;
+}
+
+.recipeError{
+    display: none;
+    background-color:rgb(233, 233, 233);
+   /*  padding: 32px; */
+/*     margin-left: 45px;
+    margin-right: 45px; */
+
+}
+
+.recipeError img{
+    margin-left: auto;
+    margin-right: auto;
+
+    width:100%;
+}
+.recipe-img{
+    border: green 4px dotted;
+    width: 265px;
+    height: auto;
+    padding: 14px;
+    margin-right: 22px;
+    margin-bottom: 12px;
+}
+
+.recipe-pagination{
+    background-color: white;
+    padding: 18px;
+}
+ 
+
+
+
+
+
+
+#btnNavID{
+    color:white;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.btnNav{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 625px){
+    #arrowDownBanner{
+        margin-top: 45px;
+    }
+}
